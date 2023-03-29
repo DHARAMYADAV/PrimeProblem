@@ -1,10 +1,14 @@
 
-
+//day-2 code
 function prime(num){
-    for(let i=0;i<=num;i++){
+    let counter=0;
+    for(let i=1;i<=num;i++){
         if(num%i==0){
-            return true
+            counter++
         }
+    }
+    if(counter===2){
+        return true;
     }
     return false;
 }
